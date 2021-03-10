@@ -54,7 +54,7 @@ window.onscroll = function () {
 
 //Активция
 function checkScroll() {
-	let scrollPos = window.scrollY;
+	let scrollPos = window.scrollY + 1;
 	let wedoScrollPos = wedo.offsetTop;
 	
 	if (scrollPos >= wedoScrollPos) {
