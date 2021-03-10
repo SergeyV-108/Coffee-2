@@ -1071,10 +1071,10 @@ body {
 	max-width: 100%;
 	display: block;
 
-	animation: live 10s linear infinite alternate;
-	-webkit-animation: live 10s linear infinite alternate;
-	-moz-animation: live 10s linear infinite alternate;
-	-o-animation: live 10s linear infinite alternate;
+	animation: live 10s 2s linear infinite alternate;
+	-webkit-animation: live 10s 2s linear infinite alternate;
+	-moz-animation: live 10s 2s linear infinite alternate;
+	-o-animation: live 10s 2s linear infinite alternate;
 }
 
 @keyframes live {
