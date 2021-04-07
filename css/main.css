@@ -976,7 +976,7 @@ body {
 .card-projects__img img {
 	max-width: 100%;
 	display: block;
-
+	transform: scale(1);
 
 	animation: live 10s linear infinite;
 	-webkit-animation: live 10s linear infinite;
