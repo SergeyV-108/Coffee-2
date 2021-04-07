@@ -970,14 +970,14 @@ body {
 
 .card-projects__img {
 	margin-bottom: 15px;
+	display: block;
 	overflow: hidden;
 }
 
 .card-projects__img img {
 	max-width: 100%;
 	display: block;
-	transform: scale(1);
-
+	
 	animation: llive 10s linear infinite;
 	-webkit-animation: llive 10s linear infinite;
 	-moz-animation: llive 10s linear infinite;
