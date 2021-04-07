@@ -919,6 +919,7 @@ body {
 	text-align: center;
 	line-height: 1.6;
 	color: #dddddd;
+	white-space: nowrap;
 }
 
 /* ================== projects ================== */
