@@ -977,11 +977,15 @@ body {
 .card-projects__img img {
 	max-width: 100%;
 	display: block;
-	
-	animation: live 10s linear infinite;
-	-webkit-animation: live 10s linear infinite;
-	-moz-animation: live 10s linear infinite;
-	-o-animation: live 10s linear infinite;
+}
+
+@media (min-width: 1400px) {
+	.card-projects__img img {
+		animation: live 10s linear infinite;
+		-webkit-animation: live 10s linear infinite;
+		-moz-animation: live 10s linear infinite;
+		-o-animation: live 10s linear infinite;
+	}
 }
 
 @keyframes live {
