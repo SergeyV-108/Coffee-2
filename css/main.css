@@ -978,10 +978,10 @@ body {
 	display: block;
 	transform: scale(1);
 
-	animation: live 10s linear infinite;
-	-webkit-animation: live 10s linear infinite;
-	-moz-animation: live 10s linear infinite;
-	-o-animation: live 10s linear infinite;
+	animation: llive 10s linear infinite;
+	-webkit-animation: llive 10s linear infinite;
+	-moz-animation: llive 10s linear infinite;
+	-o-animation: llive 10s linear infinite;
 }
 
 @keyframes live {
