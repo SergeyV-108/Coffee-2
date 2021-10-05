@@ -2,399 +2,341 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Loom</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Инструкция для IE старой версии -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!-- Отображать страницу в масштабе 100% на всех устройствах -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Подключение адаптации стилей под все браузеры -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
-
 	<!-- Подключение стилей слайдера -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
-	<!-- Подключение веб-шрифтов -->
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300;500;800&display=swap"
-		rel="stylesheet">
-
-	<!-- Подключение символов -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-		integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-		crossorigin="anonymous" />
-
-	<!-- Подключение иконок -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 	<!-- Подключение анимации AOS -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/aos.css">
 
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!-- Подключение анимации Animate/WOW -->
+	<link rel="stylesheet" href="css/animate.css" />
 
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Портфолио Web-верстальщика Сергея Вайло</title>
 </head>
 
 <body>
+	<div class="wrapper">
 
-	<!-- header -->
+		<!-- header -->
 
-	<header class="header" id="header">
-		<div class="header__inner container">
-			<div class="header__logo">
-				<p>l</p>
-				<p>o</p>
-				<p>o</p>
-				<p>m</p>
+		<header class="header" id="header">
+			<div class="header__inner">
+				<div class="header__logo">
+					<img src="image/header/logo.png" alt="">
+				</div>
+				<nav class="header__menu menu-header">
+					<div class="menu-header__button">
+						<button type="button"><i class='fas fa-power-off'></i></button>
+					</div>
+					<ul class="menu-header__list">
+						<li><a href="#" class="menu-header__link"><i class='fas fa-home' data-scroll="#home"></i></a>
+						</li>
+						<li><a href="#" class="menu-header__link"><i class='fas fa-user' data-scroll="#about"></i></a>
+						</li>
+						<li><a href="#" class="menu-header__link"><i class='fas fa-briefcase'
+									data-scroll="#work"></i></a></li>
+						<li><a href="#" class="menu-header__link"><i class='fas fa-phone-volume'
+									data-scroll="#contacts"></i></a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="header__nav nav" id="nav">
-				<ul class="nav__list">
-					<li><a href="#" class="nav__link" data-scroll="#intro">home</a></li>
-					<li><a href="#" class="nav__link" data-scroll="#pages">pages</a></li>
-					<li><a href="#" class="nav__link" data-scroll="#journal">journal</a></li>
-					<li><a href="#" class="nav__link" data-scroll="#portfolio">portfolio</a></li>
-					<li><a href="#" class="nav__link" data-scroll="#features">features</a></li>
-					<li><a href="#" class="nav__link" data-scroll="#contact">contact</a></li>
-				</ul>
-			</nav>
-			<div class="header__burger burger">
-				<span></span>
-				<span></span>
-				<span></span>
+		</header>
+
+		<!-- page -->
+
+		<main class="page">
+			<a href="#" class="scroll-up-btn" data-scroll="#home"><i class='fas fa-arrow-up'></i></a>
+
+			<div class="page__screen screen">
+
+				<!-- intro-page -->
+
+				<section class="page__intro intro-page screen-body" id="home">
+					<div class="container">
+						<div class="intro-page__inner inner-intro">
+							<h1 class="inner-intro__title">Сайт-портфолио</h1>
+							<div class="inner-intro__direction wow animate__animated animate__fadeInDown"
+								data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">WEB-Верстальщика</div>
+							<!-- <div class="inner-intro__name wow animate__animated animate__fadeInDown"
+								data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
+								<span>Sергея</span>Vайло -->
+							<div class="inner-intro__name2 wow animate__animated animate__fadeIn" data-wow-duration="1s"
+								data-wow-delay="3s" data-wow-iteration="1" data-text="Vайло Sергея">Vайло Sергея</div>
+							<div class="inner-intro__btn wow animate__animated animate__fadeInDownBig"
+								data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
+								<a href="#" class="inner-intro__link" data-scroll="#about"><span>&#10148;</span></a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div><!-- screen -->
+
+			<div class="page__screen page__screen_bg screen" style="background-image: url(image/bg_screen11.jpg);">
 			</div>
-		</div>
-	</header>
 
-	<!-- intro -->
+			<div class="page__screen screen">
 
-	<div class="intro" id="intro">
+				<!-- about-page -->
 
-		<!-- intro__header -->
+				<section class="page__about about-page screen-body" id="about">
+					<div class="container">
+						<div class="about-page__inner inner-about">
+							<h1 class="inner-about__title page__title"><span>Обо мне</span><span>about me</span></h1>
+							<div class="inner-about__content content-about">
+								<ul class="content-about__list">
+									<li><span>Верстка по макетам PSD, Figma</span><i class='fas fa-check'></i></li>
+									<li><span>Код на основе методологии БЭМ</span><i class='fas fa-check'></i></li>
+									<li><span>Применение технологий: HTML5\CSS3\SCSS\Flexbox\Java Script</span><i
+											class='fas fa-check'></i></li>
+									<li><span>Анимация на основе библиотек или media-запросов @keyframes</span><i
+											class='fas fa-check'></i></li>
+									<li><span>Верстка адаптивная (в зависимости от требований "резиновая" или по
+											брейк-поинтам), валидная (проверка по W3C), под высокую скорость загрузки
+											сайта (проверка по
+											PageSpeed Insights)</span><i class='fas fa-check'></i></li>
+								</ul>
+								<div class="content-about__image">
+									<ul>
+										<li data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100"
+											style="color: rgb(128, 178, 255);">HTML5</li>
+										<li data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100"
+											style="color: rgb(169, 212, 0);">CSS3</li>
+										<li data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="100"
+											style="color: rgb(101, 101, 101);">Java Script</li>
+									</ul>
+									<img src="image/about/pc12.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-		<div class="intro__header">
-			<h1 class="intro__title">Hello! We are Loom Studio</h1>
-			<p class="intro__text">a creative media agency that believes in the power of creative ideas and great
-				design.</p>
-		</div>
+			</div><!-- screen -->
 
-		<!-- slider -->
+			<div class="page__screen page__screen_bg screen" style="background-image: url(image/bg_screen9.jpg);"></div>
 
-		<div class="intro__slider slider__pack">
-			<div class="slider__slide slide">
-				<img class="slide__image" src="img/slider/1.jpg" alt="">
+
+			<div class="page__bg bg-page"></div>
+
+
+			<div class="page__screen page__screen_bg screen" style="background-image: url(image/bg_screen14.jpg);">
 			</div>
-			<div class="slider" id="slider">
-				<img class="slide__image" src="img/slider/2.jpg" alt="">
+
+
+			<div class="page__screen screen">
+
+				<!-- work-page -->
+
+				<section class="page__work work-page screen-body" id="work">
+					<div class="container">
+						<div class="work-page__inner inner-work">
+							<h1 class="inner-work__title page__title"><span>Мои работы</span><span>My works</span></h1>
+							<div class="inner-work__text page__text">Ниже представлены мои работы по верстке макетов
+								различных сайтов.</div>
+							<div class="inner-work__cards swiper">
+								<div class="inner-work__wrapper swiper-wrapper">
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/Medical_Club.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">Medical Club</div>
+											<div class="card-work__text">Лендинг услуг</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Medical_Club/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/Hungry-People.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">Hungry People</div>
+											<div class="card-work__text">Лендинг ресторана</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Hungry-People/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/Coffee.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">Coffee</div>
+											<div class="card-work__text">Лендинг магазина</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Coffee/" class="card-work__link"
+													target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/Ecommerce.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">Ecommerce</div>
+											<div class="card-work__text">Коммерческий сайт</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Ecommerce/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/Spring_City.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">Spring City</div>
+											<div class="card-work__text">Многостраничный сайт</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Spring-City/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/loom.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">LOOM</div>
+											<div class="card-work__text">Лендинг компании</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Loom/" class="card-work__link"
+													target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/active_cs.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">active cs</div>
+											<div class="card-work__text">Многостраничный сайт</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/ActiveCS/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+									<div class="inner-work__card card-work swiper-slide"
+										style="background-image: url(image/work/acrostia.jpg);">
+										<div class="card-work__body">
+											<div class="card-work__title">acrostia</div>
+											<div class="card-work__text">Лендинг компании</div>
+											<div class="card-work__btn">
+												<a href="https://sergeyv-108.github.io/Acrostia/"
+													class="card-work__link" target="_blank">Смотреть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- pagination -->
+								<div class="inner-work__pagination swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div><!-- screen -->
+
+			<div class="page__screen page__screen_bg screen" style="background-image: url(image/bg_screen8.jpg);"></div>
+
+			<div class="page__screen screen">
+
+				<!-- contacts-page -->
+
+				<section class="page__contacts contacts-page screen-body" id="contacts">
+					<div class="container">
+						<div class="contacts-page__inner inner-contact">
+							<h1 class="inner-contact__title page__title"><span>Контакты</span><span>Contacts</span></h1>
+							<div class="inner-contact__text page__text">По этим контактам можно связаться со мной или
+								задать вопрос, заполнив форму.</div>
+							<div class="inner-contact__content">
+								<input type="checkbox" id="flip">
+								<div class="inner-contact__flipper flipper-inner">
+									<div class="flipper-inner__card flipper-inner__card_front card-flipper">
+										<label for="flip" class="card-flipper__link"><i
+												class='far fa-question-circle'></i>
+											Задать вопрос
+										</label>
+										<div class="card-flipper__content content-card">
+											<p class="content-card__title">Мои контакты</p>
+											<ul class="content-card__list">
+												<li><i class='fas fa-mobile-alt'></i>+38 (068) 8 605 607</li>
+												<li><i class='fab fa-viber'></i>+38 (068) 8 605 607</li>
+												<li><i class='far fa-paper-plane'></i>@sergv108</li>
+												<li><i class='far fa-envelope'></i>serg.vaylo@gmail.com</li>
+											</ul>
+										</div>
+									</div>
+									<div class="flipper-inner__card flipper-inner__card_back card-flipper">
+										<label for="flip" class="card-flipper__link"><i class='fas fa-at'></i> Связаться
+											со мной</label>
+										<div class="card-flipper__content content-card">
+											<form action="test.php" method="POST" id="form" class="content-card__form">
+												<p class="content-card__title">Задать вопрос</p>
+												<input class="_req" type="text" name="name" placeholder="Имя">
+												<input class="_req _email" type="email" name="email"
+													placeholder="Email">
+												<textarea name="message" placeholder="Ваш вопрос"></textarea>
+												<button type="submit">отправить</button>
+											</form>
+											<div class="content-card__load">
+												<span>а</span>
+												<span>к</span>
+												<span>в</span>
+												<span>а</span>
+												<span>р</span>
+												<span>п</span>
+												<span>т</span>
+												<span>о</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div><!-- screen -->
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<p class="footer__text">VайлоSергей 2020</p>
+					<div class="footer__logo">
+						<img src="image/header/logo.png" alt="">
+					</div>
+
+				</div>
 			</div>
-		</div>
-		<div class="slider__content">
-			<div class="slider__string slider__string_text">Stationery Branding Mockup</div>
-			<div class="slider__string slider__string_subtext">Etiam porta sem malesuada <span>magna</span> mollis
-				euismod</div>
-		</div>
+		</footer>
 
 	</div>
 
-	<!-- wedo -->
+	<!-- Подключение слайдера -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-	<section class="wedo" id="pages">
-		<div class="container">
-			<h3 class="wedo__title section__title">what we do</h3>
-			<div class="wedo__inner">
-				<div class="wedo__card card-wedo" data-aos="zoom-in">
-					<div class="card-wedo__content">
-						<div class="card-wedo__img">
-							<img src="img/service/21.jpg" alt="">
-						</div>
-						<div class="card-wedo__title">Print Design</div>
-						<div class="card-wedo__text">Nulla vitae libero pharetra augue. Etiam porta malesuada magna
-							mollis euismod consectetur sem urdom tempus porttitor.</div>
-					</div>
-				</div>
-				<div class="wedo__card card-wedo" data-aos="zoom-in">
-					<div class="card-wedo__content">
-						<div class="card-wedo__img">
-							<img src="img/service/22.jpg" alt="">
-						</div>
-						<div class="card-wedo__title">motion video</div>
-						<div class="card-wedo__text">Nulla vitae libero pharetra augue. Etiam porta malesuada magna
-							mollis euismod consectetur sem urdom tempus porttitor.</div>
-					</div>
-				</div>
-				<div class="wedo__card card-wedo" data-aos="zoom-in">
-					<div class="card-wedo__content">
-						<div class="card-wedo__img">
-							<img src="img/service/23.jpg" alt="">
-						</div>
-						<div class="card-wedo__title">Package Design</div>
-						<div class="card-wedo__text">Nulla vitae libero pharetra augue. Etiam porta malesuada magna
-							mollis euismod consectetur sem urdom tempus porttitor.</div>
-					</div>
-				</div>
-				<div class="wedo__card card-wedo" data-aos="zoom-in">
-					<div class="card-wedo__content">
-						<div class="card-wedo__img">
-							<img src="img/service/24.jpg" alt="">
-						</div>
-						<div class="card-wedo__title">time management</div>
-						<div class="card-wedo__text">Nulla vitae libero pharetra augue. Etiam porta malesuada magna
-							mollis euismod consectetur sem urdom tempus porttitor.</div>
-					</div>
-				</div>
-			</div> <!-- wedo__inner -->
-		</div> <!-- container -->
-	</section>
+	<script src="js/swiper.js"></script>
 
-	<!-- process -->
-
-	<section class="process" id="features">
-		<div class="container">
-			<h3 class="process__title section__title">our process</h3>
-			<div class="process__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-				mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus
-				varius blandit sit amet non magna posuere velit aliquet.</div>
-			<div class="process__items">
-				<div class="process__item item-process">
-					<div class="item-process__img item-process__img_bulb"></div>
-					<div class="item-process__title">1. creatıve ideas</div>
-				</div>
-				<span class="process__line"></span>
-				<div class="process__item item-process">
-					<div class="item-process__img item-process__img_rocket"></div>
-					<div class="item-process__title">2. rapid solution</div>
-				</div>
-				<span class="process__line"></span>
-				<div class="process__item item-process">
-					<div class="item-process__img item-process__img_flask"></div>
-					<div class="item-process__title">3. magic touch</div>
-				</div>
-				<span class="process__line"></span>
-				<div class="process__item item-process">
-					<div class="item-process__img item-process__img_award"></div>
-					<div class="item-process__title">4. award winnıng</div>
-				</div>
-			</div> <!-- process__items -->
-		</div> <!-- container -->
-	</section>
-
-	<!-- projects -->
-
-	<section class="projects" id="portfolio">
-		<div class="container">
-			<h3 class="projects__title section__title">our recent projects</h3>
-			<div class="projects__items">
-				<div class="projects__card card-projects">
-					<div class="card-projects__inner">
-						<div class="card-projects__img">
-							<img src="img/projects/41.jpg" alt="">
-						</div>
-						<div class="card-projects__title"><a href="#">Dısk cover Mockup</a></div>
-						<div class="card-projects__subtext">Music, PSD, Mockups</div>
-						<div class="card-projects__text">Nulla libero un pharetra augue etiam malesuada magna mollis.
-							Nullam id dolor id nibh ultricies.</div>
-					</div>
-				</div>
-				<div class="projects__card card-projects">
-					<div class="card-projects__inner">
-						<div class="card-projects__img">
-							<img src="img/projects/42.jpg" alt="">
-						</div>
-						<div class="card-projects__title"><a href="#">john doe business Card</a></div>
-						<div class="card-projects__subtext">Corporate, Card</div>
-						<div class="card-projects__text">Donec sed odio dui. Etiam porta sem malesuada magna mollis
-							euismod
-							erat a ante.</div>
-					</div>
-				</div>
-				<div class="projects__card card-projects">
-					<div class="card-projects__inner">
-						<div class="card-projects__img">
-							<img src="img/projects/43.jpg" alt="">
-						</div>
-						<div class="card-projects__title"><a href="#">Infographic Elements</a></div>
-						<div class="card-projects__subtext">Element, Graphic</div>
-						<div class="card-projects__text">Euismod quis risus eget urna mollis ornare vel eu leo. Fusce
-							dapibus, tellus ac cursus commodo.</div>
-					</div>
-				</div>
-			</div> <!-- projects__inner -->
-		</div> <!-- container -->
-	</section>
-
-	<!-- customers -->
-
-	<section class="customers">
-		<div class="container">
-			<h3 class="customers__title section__title">What Our Customers Think</h3>
-			<div class="customers__items">
-				<div class="customers__item">
-					<div class="customers__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas
-						faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor
-						gravida at eget metus.</div>
-					<div class="customers__suptext">Barclay Widerski</div>
-				</div>
-				<div class="customers__item">
-					<div class="customers__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum
-						esse quo illum. Iste similique reprehenderit repudiandae placeat quibusdam sunt dicta animi
-						saepe necessitatibus delectus! Magni sint error doloribus fugit!</div>
-					<div class="customers__suptext">John Smith</div>
-				</div>
-				<div class="customers__item">
-					<div class="customers__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nemo
-						sint id quibusdam optio voluptas doloribus! Qui aut possimus dolorem ad voluptates molestias!
-						Laboriosam, fugit possimus. Magnam voluptatem magni ex.</div>
-					<div class="customers__suptext">Mary Brown</div>
-				</div>
-				<div class="customers__item">
-					<div class="customers__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, sit
-						voluptatibus unde, delectus aspernatur temporibus voluptas ipsum repellat impedit magnam
-						provident cum excepturi facilis recusandae eaque corporis animi nobis rem.</div>
-					<div class="customers__suptext">Mark Goldberg</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- journal -->
-
-	<section class="journa" id="journal">
-		<div class="container">
-			<h3 class="journal__title section__title">from the journal</h3>
-			<div class="journal__items">
-				<div class="journal__card card-journal">
-					<div class="card-journal__inner">
-						<div class=" card-journal__img">
-							<a href="#"><img src="img/journal/61.jpg" alt=""></a>
-						</div>
-						<div class=" card-journal__content">
-							<div class="card-journal__date">21 <span>FEB</span></div>
-							<div class="card-journal__title">
-								<a href="#">Ultricies Cras Ullamcorper Elit</a>
-							</div>
-							<div class="card-journal__subtext">Journal, Article | 7 Comments</div>
-							<div class="card-journal__text">Nulla libero un pharetra augue etiam malesuada magna mollis.
-								Praesent commodo cursus magna scelerisque.</div>
-						</div>
-					</div>
-				</div>
-				<div class="journal__card card-journal">
-					<div class="card-journal__inner">
-						<div class="card-journal__img">
-							<a href="#"><img src="img/journal/62.jpg" alt=""></a>
-						</div>
-						<div class="card-journal__content">
-							<div class="card-journal__date">21 <span>FEB</span></div>
-							<div class="card-journal__title">
-								<a href="#">Sem Elit Amet Vestibulum</a>
-							</div>
-							<div class="card-journal__subtext">Graphic, Article | 13 Comments</div>
-							<div class="card-journal__text">Donec ullamcorper nulla non metus auctor fringilla. Duis
-								mollis, est non commodo luctus, nisi erat porttitor ligula.</div>
-						</div>
-					</div>
-				</div>
-				<div class="journal__card card-journal">
-					<div class="card-journal__inner">
-						<div class="card-journal__img">
-							<a href="#"><img src="img/journal/63.jpg" alt=""></a>
-						</div>
-						<div class="card-journal__content">
-							<div class="card-journal__date">21 <span>FEB</span></div>
-							<div class="card-journal__title">
-								<a href="#">Vestibulum Magna Venenatis Tellus</a>
-							</div>
-							<div class="card-journal__subtext">Journal, Article, Poster | 11 Comments</div>
-							<div class="card-journal__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-								condimentum nibh, ut fermentum massa justo risus.</div>
-						</div>
-					</div>
-				</div>
-			</div> <!-- journal__items -->
-		</div> <!-- container -->
-	</section>
-
-	<!-- footer -->
-
-	<footer class="footer" id="contact">
-		<div class="footer__up">
-			<div class="footer__items">
-				<div class="footer__card card-footer">
-					<div class="card-footer__content">
-						<div class="card-footer__title">Get In Touch</div>
-						<p>Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem
-							malesuada
-						</p>
-						<div class="card-footer__contacts">
-							<div class="card-footer__contact">
-								<span><i class="fa">&#xf041;</i></span>
-								<p>Moonshine Street No: 14/05 Light City, Jupiter</p>
-							</div>
-							<div class="card-footer__contact">
-								<span><i class="fa">&#xf095;</i></span>
-								<p>0247 541 65 87</p>
-							</div>
-							<div class="card-footer__contact">
-								<span><i class="fa">&#xf0e0;</i></span>
-								<p>support@longwave.com</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer__card card-footer">
-					<div class="card-footer__content">
-						<div class="card-footer__title">Twitter</div>
-						<p>Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit
-							aliquet.</p>
-						<p>Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</p>
-						<p>Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.</p>
-					</div>
-				</div>
-				<div class="footer__card card-footer">
-					<div class="card-footer__content">
-						<div class="card-footer__title">Popular Posts</div>
-						<div class="card-footer__item">
-							<a href="#" target="_blank">Vivamus sagittis lacus vel augue laoreet rutrum dolor
-								auctor.</a>
-							<div class="card-footer__date">14 Nov, 2012</div>
-						</div>
-						<div class="card-footer__item">
-							<a href="#" target="_blank">Scelerisque nisl consectetur et.</a>
-							<div class="card-footer__date">22 May, 2012</div>
-						</div>
-						<div class="card-footer__item">
-							<a href="#" target="_blank">Pellentesque ornare sem lacinia<br>quam venenatis
-								vestibulum.</a>
-							<div class="card-footer__date">15 July, 2012</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer__card card-footer">
-					<div class="card-footer__content">
-						<div class="card-footer__title">About Us</div>
-						<p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi
-							erat
-							porttitor ligula, eget lacinia odio sem nec elit.</p>
-						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
-							curabitur
-						</p>
-					</div>
-				</div>
-			</div> <!-- footer__items -->
-		</div> <!-- footer__up -->
-		<div class="footer__down">
-			<p class="footer__copyright">© 2013 Loom. All rights reserved. Theme by elemis.</p>
-		</div>
-	</footer>
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-	<!--подключение слайдера-->
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- Подключение иконок -->
+	<script src="https://kit.fontawesome.com/9e73be8edf.js" crossorigin="anonymous"></script>
 
 	<!--подключение анимации AOS-->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/aos.js"></script>
+
+	<!--подключение анимации Animate/WOW-->
+	<script src="js/wow.js"></script>
 
 	<script src="js/app.js"></script>
 
