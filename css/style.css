@@ -212,6 +212,78 @@ h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Thin.eot");
+  src: local("Axiforma Thin"), local("Axiforma-Thin"), url("../fonts/Axiforma/Axiforma-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Thin.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Light.eot");
+  src: local("Axiforma Light"), local("Axiforma-Light"), url("../fonts/Axiforma/Axiforma-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Light.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Regular.eot");
+  src: local("Axiforma Regular"), local("Axiforma-Regular"), url("../fonts/Axiforma/Axiforma-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Regular.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Medium.eot");
+  src: local("Axiforma Medium"), local("Axiforma-Medium"), url("../fonts/Axiforma/Axiforma-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Medium.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-SemiBold.eot");
+  src: local("Axiforma SemiBold"), local("Axiforma-SemiBold"), url("../fonts/Axiforma/Axiforma-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-SemiBold.woff") format("woff"), url("../fonts/Axiforma/Axiforma-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Bold.eot");
+  src: local("Axiforma Bold"), local("Axiforma-Bold"), url("../fonts/Axiforma/Axiforma-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Bold.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-ExtraBold.eot");
+  src: local("Axiforma ExtraBold"), local("Axiforma-ExtraBold"), url("../fonts/Axiforma/Axiforma-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-ExtraBold.woff") format("woff"), url("../fonts/Axiforma/Axiforma-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axiforma';
+  src: url("../fonts/Axiforma/Axiforma-Heavy.eot");
+  src: local("Axiforma Heavy"), local("Axiforma-Heavy"), url("../fonts/Axiforma/Axiforma-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Axiforma/Axiforma-Heavy.woff") format("woff"), url("../fonts/Axiforma/Axiforma-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ====================================== */
 body {
   padding-right: calc(5px - (100vw - 100%));
@@ -682,7 +754,9 @@ body.lock {
 }
 
 .page__intro {
+  width: 100%;
   height: 100vh;
+  min-height: 100%;
   position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(6, 13, 20, 0.5)), to(rgba(10, 44, 77, 0.35))), url(../image/intro/bg_intro2.jpg);
   background-image: linear-gradient(rgba(6, 13, 20, 0.5) 20%, rgba(10, 44, 77, 0.35)), url(../image/intro/bg_intro2.jpg);
@@ -728,24 +802,95 @@ body.lock {
 
 /* ==================== page end ================ */
 /* ==================== intro-page ==================== */
+.intro-page__container {
+  width: 100%;
+  height: 100%;
+}
+
 .intro-page__inner {
   width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.inner-intro__content {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner-intro__content_double {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(105, 105, 105, 0.3);
+  -webkit-animation: light 7s linear infinite 6s alternate;
+  animation: light 7s linear infinite 6s alternate;
+}
+
+@-webkit-keyframes light {
+  0% {
+    opacity: 1;
+    -webkit-clip-path: circle(20vh at -10% 45%);
+            clip-path: circle(20vh at -10% 45%);
+  }
+  50% {
+    opacity: 1;
+    -webkit-clip-path: circle(30vh at 50% 50%);
+            clip-path: circle(30vh at 50% 50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: circle(22vh at 105% 55%);
+            clip-path: circle(22vh at 105% 55%);
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 1;
+    -webkit-clip-path: circle(20vh at -10% 45%);
+            clip-path: circle(20vh at -10% 45%);
+  }
+  50% {
+    opacity: 1;
+    -webkit-clip-path: circle(30vh at 50% 50%);
+            clip-path: circle(30vh at 50% 50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: circle(22vh at 105% 55%);
+            clip-path: circle(22vh at 105% 55%);
+  }
 }
 
 .inner-intro__title {
-  margin-bottom: 10px;
   font-size: 90px;
-  font-family: "Verona";
-  font-weight: bold;
+  font-family: "Axiforma";
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
   letter-spacing: 18px;
   color: black;
-  text-shadow: 0px 0px #2f1bdf, 0px -0px #2e1bdf, -0px 0px #2e1bdf, -2px -2px #2e1bdf;
+  text-shadow: 0px 0px #2f1bdf, 0px -0px #2e1bdf, -0px 0px #2e1bdf, -1px -1px #2e1bdf;
   mix-blend-mode: lighten;
-  -webkit-animation: scale-center 1.4s ease-in 0.5s both;
-  animation: scale-center 1.4s ease-in 0.5s both;
+  -webkit-animation: scale-center 1.4s ease-in 1.5s both;
+  animation: scale-center 2s ease-in 1.5s both;
 }
 
 @-webkit-keyframes scale-center {
@@ -783,12 +928,17 @@ body.lock {
   }
 }
 
+.inner-intro__title_double {
+  color: #6bc0e7;
+  text-shadow: 0px 0px #2f1bdf00, 6px -10px black, 0px 0px #2f1bdf00, -2px -2px #2f1bdf00;
+}
+
 .inner-intro__direction {
-  margin: 20px 0 0;
+  margin: 30px 0 40px;
   font-size: 36px;
   font-family: "Fira Sans";
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.705);
+  color: rgba(255, 255, 255, 0.2);
   line-height: 1.8;
   text-align: center;
 }
@@ -803,6 +953,11 @@ body.lock {
   .inner-intro__direction {
     font-size: 18px;
   }
+}
+
+.inner-intro__direction_double {
+  color: white;
+  text-shadow: 6px -10px black;
 }
 
 .inner-intro__name {
@@ -849,7 +1004,6 @@ body.lock {
 .inner-intro__name2 {
   width: 100%;
   max-width: 480px;
-  height: 200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -862,74 +1016,11 @@ body.lock {
           align-items: center;
   position: relative;
   font-size: 50px;
-  font-family: "Fira Sans";
-  font-weight: normal;
+  font-family: "Axiforma";
+  font-weight: 500;
   text-align: center;
   color: #00462b;
   letter-spacing: 5px;
-}
-
-.inner-intro__name2:before {
-  content: attr(data-text);
-  width: 100%;
-  max-width: 480px;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: #00ff9d;
-  text-shadow: -6px -10px black;
-  opacity: 0;
-  -webkit-clip-path: circle(50px at 15% 55%);
-          clip-path: circle(50px at 15% 55%);
-  background: rgba(105, 105, 105, 0.3);
-  -webkit-animation: light 5s linear infinite 6s alternate;
-  animation: light 5s linear infinite 6s alternate;
-}
-
-@-webkit-keyframes light {
-  0% {
-    opacity: 1;
-    -webkit-clip-path: circle(50px at 15% 55%);
-            clip-path: circle(50px at 15% 55%);
-  }
-  50% {
-    opacity: 1;
-    -webkit-clip-path: circle(70px at 50% 40%);
-            clip-path: circle(70px at 50% 40%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-clip-path: circle(90px at 75% 50%);
-            clip-path: circle(90px at 75% 50%);
-  }
-}
-
-@keyframes light {
-  0% {
-    opacity: 1;
-    -webkit-clip-path: circle(50px at 15% 55%);
-            clip-path: circle(50px at 15% 55%);
-  }
-  50% {
-    opacity: 1;
-    -webkit-clip-path: circle(70px at 50% 40%);
-            clip-path: circle(70px at 50% 40%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-clip-path: circle(90px at 75% 50%);
-            clip-path: circle(90px at 75% 50%);
-  }
 }
 
 @media (max-width: 960px) {
@@ -944,10 +1035,15 @@ body.lock {
   }
 }
 
+.inner-intro__name2_double {
+  color: #00ff9d;
+  text-shadow: 8px -10px black;
+}
+
 .inner-intro__btn {
   width: 100%;
   position: absolute;
-  bottom: 60px;
+  bottom: 80px;
   left: 0;
   text-align: center;
 }
@@ -1306,7 +1402,9 @@ body.lock {
   text-align: center;
   text-transform: uppercase;
   -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+   -ms-text-size-adjust: none;
+       text-size-adjust: none;
   line-height: 50px;
   color: #000;
   opacity: 1;
