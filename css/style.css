@@ -845,8 +845,8 @@ body.lock {
 @-webkit-keyframes light {
   0% {
     opacity: 1;
-    -webkit-clip-path: circle(20vh at -10% 45%);
-            clip-path: circle(20vh at -10% 45%);
+    -webkit-clip-path: circle(16vh at -10% 30%);
+            clip-path: circle(16vh at -10% 30%);
   }
   50% {
     opacity: 1;
@@ -855,16 +855,16 @@ body.lock {
   }
   100% {
     opacity: 1;
-    -webkit-clip-path: circle(22vh at 105% 55%);
-            clip-path: circle(22vh at 105% 55%);
+    -webkit-clip-path: circle(20vh at 110% 45%);
+            clip-path: circle(20vh at 110% 45%);
   }
 }
 
 @keyframes light {
   0% {
     opacity: 1;
-    -webkit-clip-path: circle(20vh at -10% 45%);
-            clip-path: circle(20vh at -10% 45%);
+    -webkit-clip-path: circle(16vh at -20% 30%);
+            clip-path: circle(16vh at -20% 30%);
   }
   50% {
     opacity: 1;
@@ -873,8 +873,8 @@ body.lock {
   }
   100% {
     opacity: 1;
-    -webkit-clip-path: circle(22vh at 105% 55%);
-            clip-path: circle(22vh at 105% 55%);
+    -webkit-clip-path: circle(20vh at 130% 45%);
+            clip-path: circle(20vh at 130% 45%);
   }
 }
 
@@ -945,6 +945,7 @@ body.lock {
 
 @media (max-width: 960px) {
   .inner-intro__direction {
+    margin: 3.13vw 0 4.17vw;
     font-size: 3.75vw;
   }
 }
