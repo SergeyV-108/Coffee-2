@@ -141,15 +141,6 @@ h6 {
 }
 
 @font-face {
-  font-family: "Bebas Neue Book";
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot");
-  src: local("Bebas Neue Book"), local("BebasNeueBook"), url("../fonts/BebasNeue/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeue/BebasNeueBold.eot");
   src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype");
@@ -758,8 +749,8 @@ body.lock {
   height: 100vh;
   min-height: 100%;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(6, 13, 20, 0.5)), to(rgba(10, 44, 77, 0.35))), url(../image/intro/bg_intro2.jpg);
-  background-image: linear-gradient(rgba(6, 13, 20, 0.5) 20%, rgba(10, 44, 77, 0.35)), url(../image/intro/bg_intro2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(6, 13, 20, 0.5)), to(rgba(10, 44, 77, 0.35))), url(../image/intro/bg_intro1.jpg);
+  background-image: linear-gradient(rgba(6, 13, 20, 0.5) 20%, rgba(10, 44, 77, 0.35)), url(../image/intro/bg_intro1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -837,7 +828,7 @@ body.lock {
   top: 0;
   left: 0;
   opacity: 0;
-  background: rgba(105, 105, 105, 0.3);
+  background: rgba(255, 255, 255, 0.15);
   -webkit-animation: light 7s linear infinite 6s alternate;
   animation: light 7s linear infinite 6s alternate;
 }
@@ -845,18 +836,18 @@ body.lock {
 @-webkit-keyframes light {
   0% {
     opacity: 1;
-    -webkit-clip-path: circle(16vh at -10% 30%);
-            clip-path: circle(16vh at -10% 30%);
+    -webkit-clip-path: circle(16vh at -20% 30%);
+    clip-path: circle(16vh at -20% 30%);
   }
   50% {
     opacity: 1;
-    -webkit-clip-path: circle(30vh at 50% 50%);
-            clip-path: circle(30vh at 50% 50%);
+    -webkit-clip-path: circle(40vh at 50% 50%);
+    clip-path: circle(40vh at 50% 50%);
   }
   100% {
     opacity: 1;
-    -webkit-clip-path: circle(20vh at 110% 45%);
-            clip-path: circle(20vh at 110% 45%);
+    -webkit-clip-path: circle(20vh at 130% 45%);
+    clip-path: circle(20vh at 130% 45%);
   }
 }
 
@@ -864,17 +855,17 @@ body.lock {
   0% {
     opacity: 1;
     -webkit-clip-path: circle(16vh at -20% 30%);
-            clip-path: circle(16vh at -20% 30%);
+    clip-path: circle(16vh at -20% 30%);
   }
   50% {
     opacity: 1;
     -webkit-clip-path: circle(40vh at 50% 50%);
-            clip-path: circle(40vh at 50% 50%);
+    clip-path: circle(40vh at 50% 50%);
   }
   100% {
     opacity: 1;
     -webkit-clip-path: circle(20vh at 130% 45%);
-            clip-path: circle(20vh at 130% 45%);
+    clip-path: circle(20vh at 130% 45%);
   }
 }
 
@@ -887,7 +878,7 @@ body.lock {
   text-align: center;
   letter-spacing: 18px;
   color: black;
-  text-shadow: 0px 0px #2f1bdf, 0px -0px #2e1bdf, -0px 0px #2e1bdf, -1px -1px #2e1bdf;
+  text-shadow: 0px 0px 5px #2e1bdf;
   mix-blend-mode: lighten;
   -webkit-animation: scale-center 1.4s ease-in 1.5s both;
   animation: scale-center 2s ease-in 1.5s both;
@@ -1004,23 +995,11 @@ body.lock {
 
 .inner-intro__name2 {
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
   font-size: 50px;
   font-family: "Axiforma";
   font-weight: 500;
   text-align: center;
-  color: #00462b;
+  color: #022344;
   letter-spacing: 5px;
 }
 
@@ -1037,14 +1016,14 @@ body.lock {
 }
 
 .inner-intro__name2_double {
-  color: #00ff9d;
+  color: #007eff;
   text-shadow: 8px -10px black;
 }
 
 .inner-intro__btn {
   width: 100%;
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
   left: 0;
   text-align: center;
 }
