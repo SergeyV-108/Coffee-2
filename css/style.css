@@ -920,7 +920,7 @@ body.lock {
 }
 
 .inner-intro__title_double {
-  color: #6bc0e7;
+  color: #00527e;
   text-shadow: 1px 1px #6bc0e7, 1px -1px #6bc0e7, -1px 1px #6bc0e7, -1px -1px #6bc0e7, 8px -10px 3px rgba(26, 26, 26, 0.8);
 }
 
@@ -1017,8 +1017,9 @@ body.lock {
 }
 
 .inner-intro__name2_double {
-  color: #1c03ff;
-  text-shadow: 8px -10px 3px rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  color: #00fbf3;
+  text-shadow: 8px -10px 3px rgba(24, 24, 24, 0.6);
 }
 
 .inner-intro__btn {
