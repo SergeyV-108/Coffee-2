@@ -81,7 +81,7 @@ new WOW().init();
 
 //===============================================================//
 // =================== Инициализация формы отправки ===================//
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
 	const form = document.getElementById('form');
 	form.addEventListener('submit', formSend);
 
@@ -153,5 +153,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	function emailTest(input) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	}
-});
+}); */
 //===============================================================//
